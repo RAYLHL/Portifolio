@@ -1,0 +1,41 @@
+@import url(style.css); 
+
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+}
+.cabecalho-menu-logo{
+    align-items: start;
+}
+.navBar-lista{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+.lista-menu_item, a{
+    list-style-type: none;
+    color: var(--cor-branco-font);
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+}
+
+.lista-menu_item::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--azul-detalhes); /* azul */
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+.lista-menu_item.active::after{
+    width: 100%;
+}

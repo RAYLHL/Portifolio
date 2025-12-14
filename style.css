@@ -1,0 +1,33 @@
+@import url(/asssets/style/nav-bar.css);
+@import url(asssets/style/home.css);
+
+/* variaveis */
+:root {
+  --bg-color: #161616;
+  --cor-branco-font: #ffffff;
+  --cor-preto-stroke: #000000;
+  --azul-detalhes: #2F7CFF;
+  --cor-cinza-stroke: #434343;
+  --title-degrade: linear-gradient(90deg, #FFFFFF, #848484 );
+  --fonte-principal:"Roboto", sans-serif;
+  --fonte-title: "Poppins", sans-serif;
+}
+
+/*.title {
+  background: var(--tech-blue);
+  -webkit-background-clip: text;
+  color: transparent;
+}*/
+body {
+    background-color: var(--bg-color);
+    color: var(--cor-branco-font);
+    font-family: var(--fonte-title);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
