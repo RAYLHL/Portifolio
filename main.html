@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    <header class ="cabecalho">
+    <header id="home" class ="cabecalho">
         <div class="navBar">
             <ul class="navBar-lista">
                 <li class="lista-menu_item active"> <a href="#">Home</a></li>
@@ -22,10 +22,10 @@
             </ul>
         </div>
     </header>
-    <section claass="section-home">
+    <section claass="conteiner-home">
         <div class="home-descricao">
             <div class="me">
-                <img src="asssets/img/imagem 3.jpg" alt="Foto de Perfil" class="foto-perfil"/>
+                <img src="assets/img/imagem 3.jpg" alt="Foto de Perfil" class="foto-perfil"/>
                 <p>OLÁ, ME CHAMO <br>
                 <span>RAYLTSON</span></p>
             </div>
@@ -36,10 +36,35 @@
                 </h1>
                 <div class="home-buttons">
                     <a href="#" class="btn-me">Meus Projetos</a>
-                    <img src="asssets/icons/seta-direita.png" alt="seta de direita" class="icon-seta"/>
+                    <img src="assets/icons/seta-direita.png" alt="seta de direita" class="icon-seta"/>
                 </div>
             </div>
         </div>
     </section>
+
+    <section  id="portfolio" class="conteiner-portfolio">
+    <div class="carousel-wrapper">
+        
+        <button class="arrow left" onclick="scrollCarousel(-1)">
+        <img src="assets/icons/seta-esquerda (1).png" alt="Anterior">
+        </button>
+
+        <div class="carousel" id="carousel">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        </div>
+
+        <button class="arrow right" onclick="scrollCarousel(1)">
+        <img src="assets/icons/seta-direita.png" alt="Próximo">
+        </button>
+
+    </div>
+    </section>
+
+    <script src="assets/js/carousel.js"></script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+@import url(style.css); 
+
+body {
+  background: #0f0f0f;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+.carousel {
+  display: flex;
+  gap: 30px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+   /* limita para apenas 3 cards visíveis */
+  width: calc((360px * 3) + (30px * 2));
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.card {
+  min-width: 350px;
+  height: 560px;
+  border: 2px solid var(--cor-branco-font);
+  border-radius: 24px;
+  background: transparent;
+}
+
+/* Setas */
+.arrow {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  background: transparent;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow.left {
+  left: 50px; 
+}
+
+.arrow.right {
+  right: 50px;
+}
+.arrow:hover {
+  background: var(--azul-detalhes); /* azul destaque */
+  border-color: var(--cor-preto-stroke);
+}
+
