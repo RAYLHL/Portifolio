@@ -7,6 +7,13 @@
     justify-content: center;
     text-align: center;
     gap: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1000; /* garante que fique acima do conteúdo */
+    background-color: var(--bg-color); /* ou a cor do seu layout */
 }
 .cabecalho-menu-logo{
     align-items: start;
