@@ -1,0 +1,32 @@
+@import url(style.css);
+
+
+.conteiner-about {
+  display: flex;
+  justify-content: center;
+  margin-top: 10em;
+}
+
+.foto-about {
+  width: 387px;
+  height: 370px;
+  background-color: var(--cor-cinza-stroke);
+  border-radius: 20px;
+  flex-shrink: 0; /* impede a foto de encolher */
+}
+
+.about-descricao {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* centraliza verticalmente */
+  gap: 40px; /* espaço entre foto e texto */
+  max-width: 1000px;
+}
+
+.about-text {
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: left; /* IMPORTANTE */
+  max-width: 500px;
+  color: var(--cor-branco-font); /* opcional, se for tema escuro */
+}
