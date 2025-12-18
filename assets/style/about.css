@@ -30,3 +30,45 @@
   max-width: 500px;
   color: var(--cor-branco-font); /* opcional, se for tema escuro */
 }
+.my-stack{
+  text-align: center;
+  font-family: var(--fonte-title);
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.1;
+  background: linear-gradient(90deg, #ffffff 0%, #9e9e9e 60%, #6d6d6d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 3em;
+}
+.stack-icon {
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* espaço entre os cards */
+  flex-wrap: wrap; /* quebra linha se precisar */
+}
+.stack-fundo {
+  width: 86px;
+  height: 74px;
+  display: flex;                 /*  ESSENCIAL */
+  align-items: center;           /* centraliza vertical */
+  justify-content: center;       /* centraliza horizontal */
+
+  border-radius: 20px;
+  border: 1px solid var(--cor-cinza-stroke);
+
+  background: #0f0f0f;           /* fundo escuro */
+  box-shadow: 
+    inset 0 0 0 1px rgba(255,255,255,0.03),
+    0 8px 20px rgba(0,0,0,0.6);
+}
+
+.stack-fundo img {
+  width: 36px;
+  height: auto;
+}
+.stack-fundo:hover {
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.8);
+}
