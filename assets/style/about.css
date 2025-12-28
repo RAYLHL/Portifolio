@@ -41,12 +41,7 @@
   -webkit-text-fill-color: transparent;
   margin-top: 3em;
 }
-.stack-icon {
-  display: flex;
-  justify-content: center;
-  gap: 16px; /* espaço entre os cards */
-  flex-wrap: wrap; /* quebra linha se precisar */
-}
+
 .stack-fundo {
   width: 86px;
   height: 74px;
@@ -71,4 +66,31 @@
   transform: translateY(-4px);
   transition: 0.3s ease;
   box-shadow: 0 12px 28px rgba(0,0,0,0.8);
+}
+
+.stack-ticker {
+  overflow: hidden;
+  width: 100%;
+  padding: 16px 0;
+}
+/* Fade nas laterais (estilo loja premium) */
+.stack-ticker::before,
+.stack-ticker::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+}
+
+.stack-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+}
+
+.stack-group {
+  display: flex;
+  gap: 16px;
 }
