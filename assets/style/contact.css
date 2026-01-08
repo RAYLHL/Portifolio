@@ -1,23 +1,73 @@
 @import url(style.css); 
 
 
-conteiner-contact
+.conteiner-contact{
+    background-color: var(--azul-detalhes);
+    padding: 60px 80px;
+}
+
+.contact-wrapper{
+    max-width: 640px;
+}
+
+.contact-title{
+    font-size: 22px;
+    margin-bottom: 32px;
+    color: #000;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-field input,
+.contact-field textarea{
+    width: 100%;
+    background-color: #e5e5e5;
+    border: 2px solid #000;
+    padding: 12px 14px;
+    font-size: 14px;
+    outline: none;
+}
+
+.contact-field textarea{
+    height: 140px;
+    resize: none;
+}
+
+.contact-actions button{
+    width: 140px;
+    height: 42px;
+    background-color: #e5e5e5;
+    border: 2px solid #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 .contact-buttons{
-    width: 90px;
-    display: inline-flex;  
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.contact-link{
+    width: 82px;
+    height: 70px;
+
+    display: flex;
     align-items: center;
-    gap: 12px;
+    justify-content: center;
 
-    padding: 14px 22px;
-    border: 3px solid var(--cor-branco-font);
-    border-bottom-width: 9px;
-    border-radius: 14px;
+    border-top: 3px solid var(--cor-preto-stroke);
+    border-right: 3px solid var(--cor-preto-stroke);
+    border-bottom: 9px solid var(--cor-preto-stroke);
+    border-left: 3px solid var(--cor-preto-stroke);
+    border-radius: 12px; /* cantos arredondados */
+    cursor: pointer;
 
-    color: var(--cor-branco-font);
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-
-    background: transparent;
     transition: all 0.3s ease;
 }
