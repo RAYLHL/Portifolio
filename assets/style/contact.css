@@ -2,6 +2,7 @@
 
 
 .conteiner-contact{
+    margin-top: 3em;
     background-color: var(--azul-detalhes);
     padding: 60px 80px;
 }
@@ -26,7 +27,7 @@
 .contact-field textarea{
     width: 100%;
     background-color: #e5e5e5;
-    border: 2px solid #000;
+    border: 2px solid var(--cor-preto-stroke);
     padding: 12px 14px;
     font-size: 14px;
     outline: none;
@@ -54,20 +55,36 @@
     gap: 16px;
 }
 
-.contact-link{
+.contact-link {
     width: 82px;
     height: 70px;
+
+    background-color: var(--azul-detalhes);
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border-top: 3px solid var(--cor-preto-stroke);
-    border-right: 3px solid var(--cor-preto-stroke);
-    border-bottom: 9px solid var(--cor-preto-stroke);
-    border-left: 3px solid var(--cor-preto-stroke);
-    border-radius: 12px; /* cantos arredondados */
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    border-left: 3px solid #000;
+    border-bottom: 9px solid #000;
+
+    border-radius: 14px;
     cursor: pointer;
 
-    transition: all 0.3s ease;
+    transition: transform 0.2s ease;
+}
+
+.contact-link a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-link:hover {
+    transform: translateY(-3px);
 }

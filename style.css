@@ -3,12 +3,13 @@
 @import url(assets/style/portfolio.css);
 @import url(assets/style/about.css);
 @import url(assets/style/contact.css);
+@import url(assets/style/footer.css);
 
 /* variaveis */
 :root {
   --bg-color: #161616;
   --cor-branco-font: #ffffff;
-  --cor-preto-stroke: #000000;
+  --azul-detalhes: #000000;
   --azul-detalhes: #2F7CFF;
   --cor-cinza-stroke: #434343;
   --title-degrade: linear-gradient(90deg, #FFFFFF, #848484 );

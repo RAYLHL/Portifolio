@@ -1,20 +1,28 @@
 @import url(style.css); 
 
 
-.cabecalho{
+.cabecalho {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
     gap: 40px;
+
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+
+    z-index: 9999; /* 👈 ESSENCIAL */
+
+    background: rgba(15, 15, 20, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
     box-shadow: 0 1px 10px rgba(48, 51, 51, 0.6);
-    z-index: 1000; /* garante que fique acima do conteúdo */
-    background-color: var(--bg-color); /* ou a cor do seu layout */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
+
 .cabecalho-menu-logo{
     align-items: start;
 }
