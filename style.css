@@ -9,7 +9,7 @@
 :root {
   --bg-color: #161616;
   --cor-branco-font: #ffffff;
-  --azul-detalhes: #000000;
+  --cor-preto-stroke: #000000;
   --azul-detalhes: #2F7CFF;
   --cor-cinza-stroke: #434343;
   --title-degrade: linear-gradient(90deg, #FFFFFF, #848484 );

@@ -43,26 +43,156 @@
     </section>
 
     <section  id="portfolio" class="conteiner-portfolio">
-    <div class="carousel-wrapper">
-        
-        <button class="arrow left" onclick="scrollCarousel(-1)">
-        <img src="assets/icons/seta-esquerda (1).png" alt="Anterior">
-        </button>
-
-        <div class="carousel" id="carousel">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <div class="portfolio-header">
+            <h2 class="portfolio-title">PORTFÓLIO</h2>
+            <p class="portfolio-subtitle">
+                Alguns dos projetos que desenvolvi recentemente. Clique para ver em detalhes.
+            </p>
         </div>
 
-        <button class="arrow right" onclick="scrollCarousel(1)">
-        <img src="assets/icons/seta-direita.png" alt="Próximo">
-        </button>
+        <div class="carousel-wrapper">
+            
+            <button class="arrow left" type="button" onclick="scrollCarousel(-1)" aria-label="Projetos anteriores">
+                <img src="assets/icons/seta-esquerda (1).png" alt="Anterior">
+            </button>
 
-    </div>
+            <div class="carousel" id="carousel">
+                <article class="card">
+                    <div class="card-image">
+                        <img src="assets/img/imagem portifolio.jpg" alt="Projeto 1 - Landing page moderna">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Front-end</span>
+                        <h3 class="card-title">Landing page moderna</h3>
+                        <p class="card-description">
+                            Página institucional responsiva com foco em conversão, animações suaves e componentes reutilizáveis.
+                        </p>
+                        <div class="card-techs">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" target="_blank" class="card-button primary">Ver projeto</a>
+                            <a href="#" target="_blank" class="card-button secondary">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="assets/img/imagem portifolio.jpg" alt="Projeto 2 - Dashboard de métricas">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">UI Design</span>
+                        <h3 class="card-title">Dashboard de métricas</h3>
+                        <p class="card-description">
+                            Interface de dashboard focada em visualização de dados e hierarquia clara de informações.
+                        </p>
+                        <div class="card-techs">
+                            <span>Figma</span>
+                            <span>Design System</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" target="_blank" class="card-button primary">Ver projeto</a>
+                            <a href="#" target="_blank" class="card-button secondary">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="assets/img/imagem portifolio.jpg" alt="Projeto 3 - Aplicação fullstack">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Fullstack</span>
+                        <h3 class="card-title">Aplicação fullstack</h3>
+                        <p class="card-description">
+                            CRUD completo com autenticação, áreas protegidas e consumo de API.
+                        </p>
+                        <div class="card-techs">
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                            <span>API</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" target="_blank" class="card-button primary">Ver projeto</a>
+                            <a href="#" target="_blank" class="card-button secondary">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="assets/img/imagem portifolio.jpg" alt="Projeto 4 - E-commerce responsivo">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Front-end</span>
+                        <h3 class="card-title">E-commerce responsivo</h3>
+                        <p class="card-description">
+                            Layout de loja virtual com grid de produtos, carrinho e foco em experiência mobile-first.
+                        </p>
+                        <div class="card-techs">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" target="_blank" class="card-button primary">Ver projeto</a>
+                            <a href="#" target="_blank" class="card-button secondary">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="assets/img/imagem portifolio.jpg" alt="Projeto 5 - Blog minimalista">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">UI / UX</span>
+                        <h3 class="card-title">Blog minimalista</h3>
+                        <p class="card-description">
+                            Interface de blog com tipografia limpa, foco em leitura e componentes reutilizáveis de post.
+                        </p>
+                        <div class="card-techs">
+                            <span>Figma</span>
+                            <span>Prototipagem</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" target="_blank" class="card-button primary">Ver projeto</a>
+                            <a href="#" target="_blank" class="card-button secondary">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="assets/img/imagem portifolio.jpg" alt="Projeto 6 - Sistema de login">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Fullstack</span>
+                        <h3 class="card-title">Sistema de login</h3>
+                        <p class="card-description">
+                            Tela de autenticação com validação, feedback de erro e integração com backend.
+                        </p>
+                        <div class="card-techs">
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                            <span>API</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" target="_blank" class="card-button primary">Ver projeto</a>
+                            <a href="#" target="_blank" class="card-button secondary">Código</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <button class="arrow right" type="button" onclick="scrollCarousel(1)" aria-label="Próximos projetos">
+                <img src="assets/icons/seta-direita.png" alt="Próximo">
+            </button>
+
+        </div>
     </section>
 
     <section id="about" class="conteiner-about">
@@ -92,8 +222,6 @@
                 </div>
             </div>
         </div>
-
-    <section id="contact" class="conteiner-contact">
 
     <section id="contact" class="conteiner-contact">
     <div class="contact-wrapper">
@@ -137,40 +265,25 @@
     </div>
 </section>
 
-        <div class="contact-redes">
-            <div class="contact-buttons">
-                    <div class="contact-link">
-                        <a href="https://www.linkedin.com/in/rayltsonhenrique-lemes" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/icons/icon-linkedin(3).png" alt="Ícone do LinkedIn">
-                        </a>
-                    </div>
+    <footer class="footer">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/rayltsonhenrique-lemes" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="assets/icons/icon-linkedin(3).png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/RAYLHL" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="assets/icons/icon-github.png" alt="GitHub">
+                </a>
+                <a href="https://www.instagram.com/raylhenrique/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <img src="assets/icons/icon-intagram.png" alt="Instagram">
+                </a>
+                <a href="https://discord.com/users/429632013986263680" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                    <img src="assets/icons/icon-discord (1).png" alt="Discord">
+                </a>
+            </div>
+            <p class="footer-copy">© 2025 Desenvolvido por Rayltson</p>
+    </footer>
 
-                    <div class="contact-link">
-                        <a href="https://github.com/RAYLHL" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/icons/icon-github.png" alt="icon-github">
-                        </a>
-                    </div>
-                    
-                    <div class="contact-link">
-                        <a href="https://www.instagram.com/raylhenrique/" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/icons/icon-intagram.png" alt="icon-instagram">
-                        </a>
-                    </div>
-
-                    <div class="contact-link">  
-                        <a href="https://discord.com/users/429632013986263680" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/icons/icon-discord (1).png" alt="icon-dis
-                            cord">
-                        </a>
-                    </div>
-        </div>
-</section>
-
-<footer class="footer">
-  <p>© 2025 Desenvolvido por Rayltson</p>
-</footer>
-
-
+    
     <script src="assets/js/carousel.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/stacks.js"></script>
