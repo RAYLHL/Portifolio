@@ -32,14 +32,18 @@
 }
 .my-stack{
   text-align: center;
+  margin-top: 3em;
+}
+
+.stack-title{
   font-family: var(--fonte-title);
-  font-size: 25px;
+  font-size: var(--font-size-section-title);
   font-weight: 700;
   line-height: 1.1;
   background: linear-gradient(90deg, #ffffff 0%, #9e9e9e 60%, #6d6d6d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 3em;
+  background-clip: text;
 }
 
 .stack-fundo {

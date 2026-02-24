@@ -12,9 +12,12 @@
 }
 
 .contact-title{
-    font-size: 22px;
-    margin-bottom: 32px;
-    color: #000;
+  text-align: start;
+  font-family: var(--fonte-title);
+  font-size: var(--font-size-section-title);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--bg-color);
 }
 
 .contact-form{

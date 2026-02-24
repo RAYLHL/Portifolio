@@ -8,6 +8,7 @@
 /* variaveis */
 :root {
   --bg-color: #161616;
+  --bg-color-branco:#ffffff;
   --cor-branco-font: #ffffff;
   --cor-preto-stroke: #000000;
   --azul-detalhes: #2F7CFF;
@@ -15,6 +16,8 @@
   --title-degrade: linear-gradient(90deg, #FFFFFF, #848484 );
   --fonte-principal:"Roboto", sans-serif;
   --fonte-title: "Poppins", sans-serif;
+  /* Tamanho de títulos de seção: sempre em rem para não depender do pai */
+  --font-size-section-title: 2.5rem;
 }
 
 /*.title {

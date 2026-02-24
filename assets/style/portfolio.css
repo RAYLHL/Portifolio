@@ -1,26 +1,19 @@
-/* PORTFÓLIO / CARROSSEL DE PROJETOS */
+@import url(style.css);
 
 .conteiner-portfolio{
   padding: 80px 40px;
 }
 
-.portfolio-header{
-  max-width: 900px;
-  margin: 0 auto 40px;
-  text-align: center;
-}
-
 .portfolio-title{
+  text-align: center;
   font-family: var(--fonte-title);
-  font-size: 26px;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
-}
-
-.portfolio-subtitle{
-  font-family: var(--fonte-principal);
-  font-size: 14px;
-  color: #bfbfbf;
+  font-size: var(--font-size-section-title);
+  font-weight: 700;
+  line-height: 1.1;
+  background: linear-gradient(90deg, #ffffff 0%, #9e9e9e 60%, #6d6d6d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .carousel-wrapper {
@@ -51,8 +44,8 @@
   height: 100%;
   min-height: 420px;
   border-radius: 24px;
-  border: 2px solid var(--cor-branco-font);
-  background: #101010;
+  border: 2px solid var(--cor-preto-stroke);
+  background: var(--bg-color-branco);/* troca de cor */
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -85,23 +78,26 @@
   border-radius: 999px;
   background-color: var(--azul-detalhes);
   color: #000;
+  border: 2px solid var(--cor-preto-stroke);/* troca de cor */
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
 .card-title{
+  color:var(--cor-preto-stroke);/* troca de cor */
   font-size: 18px;
   font-family: var(--fonte-title);
 }
 
 .card-description{
   font-size: 13px;
-  color: #d0d0d0;
+  color: var(--cor-preto-stroke);/* troca de cor */
   line-height: 1.4;
 }
 
 .card-techs{
+  color: var(--cor-preto-stroke);/* troca de cor */
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -111,7 +107,7 @@
 .card-techs span{
   padding: 4px 8px;
   border-radius: 999px;
-  border: 1px solid #444;
+  border: 1px solid var(--cor-preto-stroke);
   font-size: 11px;
 }
 
@@ -131,15 +127,15 @@
   font-weight: 600;
   text-decoration: none;
   border: 2px solid var(--cor-preto-stroke);
-  background-color: #e5e5e5;
+  background-color:var(--azul-detalhes);
   color: #000;
   transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card-button.secondary{
   background-color: transparent;
-  color: #fff;
-  border-color: #fff;
+  color: var(--cor-preto-stroke);
+  border-color:var(--cor-preto-stroke);
 }
 
 .card-button:hover{
@@ -152,7 +148,7 @@
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  border: 2px solid #fff;
+  border: 2px solid var(--cor-preto-stroke);
   background: #111;
   cursor: pointer;
 
